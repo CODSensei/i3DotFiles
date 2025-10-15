@@ -68,10 +68,10 @@ bindsym $mod+Shift+q kill
 #ScreenShot binding
 # bindsym $mod+p exec --no-startup-id gnome-screenshot
 # Screenshot of a selected area, prompting you to select the region
-bindsym --release $mod+Shift+p exec "scrot -s '~/Pictures/%Y-%m-%d-%H-%M-%S-$wx$h.png'"
+bindsym --release $mod+Shift+p exec "scrot -s '/home/urahara/Pictures/scrot-screenshot-%Y-%m-%d-%H-%M-%S-$wx$h.png'"
 
 # Screenshot of the active window
-bindsym --release $mod+p exec "scrot -u '~/Pictures/%Y-%m-%d-%H-%M-%S-$wx$h.png'"
+bindsym --release $mod+p exec "scrot -u '/home/urahara/Pictures/scrot-screenshot-%Y-%m-%d-%H-%M-%S-$wx$h.png'"
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run -i
