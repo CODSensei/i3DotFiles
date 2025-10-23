@@ -60,7 +60,14 @@ bindsym $mod+b exec "brave-browser"
 bindsym $mod+c exec "code" 
 bindsym $mod+ctrl+b exec "blueman-manager" 
 
-# bindsym $mod+Return exec kitty 
+
+bindsym $mod+Shift+v exec --no-startup-id copyq show
+
+for_window [instance="copyq"] floating enable
+for_window [instance="copyq"] resize set 1000 600
+for_window [instance="copyq"] border pixel 5
+
+exec copyq bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
